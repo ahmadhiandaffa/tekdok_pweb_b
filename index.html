@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="SynthMed - Platform riset terbuka untuk augmentasi dan sintesis dataset kesehatan. Gratis untuk seluruh peneliti. Perbanyak data riset Anda dengan AI.">
-  <meta name="keywords" content="dataset sintesis, augmentasi data, riset kesehatan, synthetic data, data augmentation, penelitian medis">
+  <meta name="description"
+    content="fikri - Platform riset terbuka untuk augmentasi dan sintesis dataset kesehatan. Gratis untuk seluruh peneliti. Perbanyak data riset Anda dengan AI.">
+  <meta name="keywords"
+    content="dataset sintesis, augmentasi data, riset kesehatan, synthetic data, data augmentation, penelitian medis">
   <title>SynthMed — Platform Riset Terbuka untuk Sintesis Dataset Kesehatan</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
 
   <!-- Cursor Glow -->
@@ -56,7 +62,8 @@
           Perbanyak <span class="gradient-text">Dataset Riset</span> Kesehatan Anda dengan AI
         </h1>
         <p class="hero-desc">
-          Platform terbuka dan gratis bagi seluruh peneliti untuk mengaugmentasi dan mensintesiskan dataset kesehatan. Ubah ratusan data menjadi ribuan — tanpa mengorbankan kualitas dan distribusi statistik.
+          Platform terbuka dan gratis bagi seluruh peneliti untuk mengaugmentasi dan mensintesiskan dataset kesehatan.
+          Ubah ratusan data menjadi ribuan — tanpa mengorbankan kualitas dan distribusi statistik.
         </p>
         <div class="hero-actions">
           <button class="btn-primary" id="btnStartFree">
@@ -94,14 +101,18 @@
               <span class="code-comment">// Generate synthetic patient data</span>
             </div>
             <div class="line">
-              <span class="code-keyword">import</span> <span class="code-bracket">{</span> <span class="code-function">SynthMed</span> <span class="code-bracket">}</span> <span class="code-keyword">from</span> <span class="code-string">'@synthmed/core'</span>
+              <span class="code-keyword">import</span> <span class="code-bracket">{</span> <span
+                class="code-function">SynthMed</span> <span class="code-bracket">}</span> <span
+                class="code-keyword">from</span> <span class="code-string">'@synthmed/core'</span>
             </div>
             <div class="line">&nbsp;</div>
             <div class="line">
-              <span class="code-keyword">const</span> generator = <span class="code-keyword">new</span> <span class="code-function">SynthMed</span><span class="code-bracket">()</span>
+              <span class="code-keyword">const</span> generator = <span class="code-keyword">new</span> <span
+                class="code-function">SynthMed</span><span class="code-bracket">()</span>
             </div>
             <div class="line">
-              <span class="code-keyword">const</span> dataset = <span class="code-keyword">await</span> generator.<span class="code-function">create</span><span class="code-bracket">({</span>
+              <span class="code-keyword">const</span> dataset = <span class="code-keyword">await</span> generator.<span
+                class="code-function">create</span><span class="code-bracket">({</span>
             </div>
             <div class="line">
               &nbsp;&nbsp;<span class="code-string">type</span>: <span class="code-string">'rekam_medis'</span>,
@@ -147,38 +158,45 @@
       <div class="features-header reveal">
         <span class="section-label"><span class="dot"></span> Fitur Platform</span>
         <h2 class="section-title">Alat Riset yang <span class="highlight">Powerful</span> & Gratis</h2>
-        <p class="section-subtitle">Dirancang khusus untuk membantu peneliti mengaugmentasi dataset kesehatan mereka. Semua fitur tersedia tanpa biaya.</p>
+        <p class="section-subtitle">Dirancang khusus untuk membantu peneliti mengaugmentasi dataset kesehatan mereka.
+          Semua fitur tersedia tanpa biaya.</p>
       </div>
       <div class="features-grid">
         <div class="feature-card reveal">
           <div class="feature-icon teal">🧠</div>
           <h3 class="feature-title">Augmentasi Cerdas</h3>
-          <p class="feature-desc">Upload dataset kecil Anda, dan AI kami akan mempelajari pola distribusinya lalu menghasilkan data sintetis baru yang konsisten secara statistik.</p>
+          <p class="feature-desc">Upload dataset kecil Anda, dan AI kami akan mempelajari pola distribusinya lalu
+            menghasilkan data sintetis baru yang konsisten secara statistik.</p>
         </div>
         <div class="feature-card reveal">
           <div class="feature-icon cyan">🔒</div>
           <h3 class="feature-title">Privasi Data Terjaga</h3>
-          <p class="feature-desc">Data asli Anda tidak pernah disimpan di server. Proses sintesis menjamin privasi pasien melalui mekanisme differential privacy.</p>
+          <p class="feature-desc">Data asli Anda tidak pernah disimpan di server. Proses sintesis menjamin privasi
+            pasien melalui mekanisme differential privacy.</p>
         </div>
         <div class="feature-card reveal">
           <div class="feature-icon green">📊</div>
           <h3 class="feature-title">Validasi Statistik</h3>
-          <p class="feature-desc">Pengujian otomatis kualitas data meliputi distribusi, korelasi, dan consistency check terhadap standar medis internasional.</p>
+          <p class="feature-desc">Pengujian otomatis kualitas data meliputi distribusi, korelasi, dan consistency check
+            terhadap standar medis internasional.</p>
         </div>
         <div class="feature-card reveal">
           <div class="feature-icon blue">⚡</div>
           <h3 class="feature-title">Generasi Real-time</h3>
-          <p class="feature-desc">Infrastruktur GPU-accelerated yang mampu menghasilkan jutaan record data sintetis dalam hitungan menit.</p>
+          <p class="feature-desc">Infrastruktur GPU-accelerated yang mampu menghasilkan jutaan record data sintetis
+            dalam hitungan menit.</p>
         </div>
         <div class="feature-card reveal">
           <div class="feature-icon purple">🔗</div>
           <h3 class="feature-title">Ekspor Multi-Format</h3>
-          <p class="feature-desc">Unduh hasil sintesis dalam format CSV, JSON, Excel, atau FHIR. Siap digunakan langsung untuk analisis di Python, R, atau SPSS.</p>
+          <p class="feature-desc">Unduh hasil sintesis dalam format CSV, JSON, Excel, atau FHIR. Siap digunakan langsung
+            untuk analisis di Python, R, atau SPSS.</p>
         </div>
         <div class="feature-card reveal">
           <div class="feature-icon amber">📋</div>
           <h3 class="feature-title">Standar HL7 & FHIR</h3>
-          <p class="feature-desc">Dataset dihasilkan sesuai standar interoperabilitas kesehatan HL7 FHIR, siap digunakan untuk sistem EHR.</p>
+          <p class="feature-desc">Dataset dihasilkan sesuai standar interoperabilitas kesehatan HL7 FHIR, siap digunakan
+            untuk sistem EHR.</p>
         </div>
       </div>
     </div>
@@ -190,32 +208,37 @@
       <div class="how-header reveal">
         <span class="section-label"><span class="dot"></span> Cara Kerja</span>
         <h2 class="section-title">Empat Langkah <span class="highlight">Mudah</span></h2>
-        <p class="section-subtitle">Dari konfigurasi hingga dataset siap pakai, proses pembuatan data sintetis yang simpel dan intuitif.</p>
+        <p class="section-subtitle">Dari konfigurasi hingga dataset siap pakai, proses pembuatan data sintetis yang
+          simpel dan intuitif.</p>
       </div>
       <div class="steps-container">
         <div class="step-card reveal">
           <div class="step-number">1</div>
           <div class="step-icon">📝</div>
           <h3 class="step-title">Upload Dataset Anda</h3>
-          <p class="step-desc">Unggah dataset riset Anda dalam format CSV atau Excel. Sistem akan menganalisis struktur, tipe data, dan distribusi kolom secara otomatis.</p>
+          <p class="step-desc">Unggah dataset riset Anda dalam format CSV atau Excel. Sistem akan menganalisis struktur,
+            tipe data, dan distribusi kolom secara otomatis.</p>
         </div>
         <div class="step-card reveal">
           <div class="step-number">2</div>
           <div class="step-icon">🤖</div>
           <h3 class="step-title">Atur Jumlah Data</h3>
-          <p class="step-desc">Tentukan berapa banyak data sintetis yang ingin dihasilkan — dari 2x hingga 100x lipat dari dataset asli Anda.</p>
+          <p class="step-desc">Tentukan berapa banyak data sintetis yang ingin dihasilkan — dari 2x hingga 100x lipat
+            dari dataset asli Anda.</p>
         </div>
         <div class="step-card reveal">
           <div class="step-number">3</div>
           <div class="step-icon">🔍</div>
           <h3 class="step-title">AI Sintesis & Validasi</h3>
-          <p class="step-desc">AI mempelajari pola dan menghasilkan data baru. Sistem otomatis memvalidasi distribusi statistik agar konsisten dengan data asli.</p>
+          <p class="step-desc">AI mempelajari pola dan menghasilkan data baru. Sistem otomatis memvalidasi distribusi
+            statistik agar konsisten dengan data asli.</p>
         </div>
         <div class="step-card reveal">
           <div class="step-number">4</div>
           <div class="step-icon">📥</div>
           <h3 class="step-title">Download & Gunakan</h3>
-          <p class="step-desc">Unduh dataset yang sudah diperbanyak dalam format pilihan Anda. Langsung siap untuk analisis lanjutan dan publikasi.</p>
+          <p class="step-desc">Unduh dataset yang sudah diperbanyak dalam format pilihan Anda. Langsung siap untuk
+            analisis lanjutan dan publikasi.</p>
         </div>
       </div>
     </div>
@@ -227,14 +250,16 @@
       <div class="dataset-header reveal">
         <span class="section-label"><span class="dot"></span> Tipe Dataset</span>
         <h2 class="section-title">Beragam <span class="highlight">Jenis Data</span> Kesehatan</h2>
-        <p class="section-subtitle">Kami mendukung pembuatan berbagai tipe dataset medis untuk kebutuhan riset, pengembangan, dan pendidikan.</p>
+        <p class="section-subtitle">Kami mendukung pembuatan berbagai tipe dataset medis untuk kebutuhan riset,
+          pengembangan, dan pendidikan.</p>
       </div>
       <div class="dataset-grid">
         <div class="dataset-card reveal-left">
           <div class="dataset-icon-wrap teal">🏥</div>
           <div class="dataset-info">
             <h3>Rekam Medis Elektronik (EHR)</h3>
-            <p>Data pasien sintetis lengkap meliputi demografi, diagnosis, prosedur, resep obat, hasil lab, dan riwayat kunjungan.</p>
+            <p>Data pasien sintetis lengkap meliputi demografi, diagnosis, prosedur, resep obat, hasil lab, dan riwayat
+              kunjungan.</p>
             <div class="dataset-tags">
               <span class="dataset-tag">ICD-10</span>
               <span class="dataset-tag">SNOMED CT</span>
@@ -246,7 +271,8 @@
           <div class="dataset-icon-wrap cyan">🔬</div>
           <div class="dataset-info">
             <h3>Data Laboratorium & Patologi</h3>
-            <p>Hasil pemeriksaan laboratorium sintetis dengan nilai yang realistis untuk hematologi, kimia darah, urinalisis, dan lainnya.</p>
+            <p>Hasil pemeriksaan laboratorium sintetis dengan nilai yang realistis untuk hematologi, kimia darah,
+              urinalisis, dan lainnya.</p>
             <div class="dataset-tags">
               <span class="dataset-tag">LOINC</span>
               <span class="dataset-tag">CBC</span>
@@ -258,7 +284,8 @@
           <div class="dataset-icon-wrap green">💊</div>
           <div class="dataset-info">
             <h3>Data Farmasi & Obat</h3>
-            <p>Dataset peresepan obat, interaksi obat, efek samping, dan data farmakokinetik untuk riset farmakologi.</p>
+            <p>Dataset peresepan obat, interaksi obat, efek samping, dan data farmakokinetik untuk riset farmakologi.
+            </p>
             <div class="dataset-tags">
               <span class="dataset-tag">RxNorm</span>
               <span class="dataset-tag">NDC</span>
@@ -316,12 +343,14 @@
       <div class="testimonials-header reveal">
         <span class="section-label"><span class="dot"></span> Testimoni Peneliti</span>
         <h2 class="section-title">Digunakan Oleh <span class="highlight">Peneliti</span> di Seluruh Indonesia</h2>
-        <p class="section-subtitle">Pengalaman para peneliti yang telah menggunakan SynthMed untuk memperkaya dataset riset mereka.</p>
+        <p class="section-subtitle">Pengalaman para peneliti yang telah menggunakan SynthMed untuk memperkaya dataset
+          riset mereka.</p>
       </div>
       <div class="testimonials-grid">
         <div class="testimonial-card reveal">
           <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Dataset saya yang awalnya hanya 200 sampel bisa diaugmentasi menjadi 5.000 dengan distribusi yang sangat konsisten. Ini sangat membantu untuk riset skripsi saya."</p>
+          <p class="testimonial-text">"Dataset saya yang awalnya hanya 200 sampel bisa diaugmentasi menjadi 5.000 dengan
+            distribusi yang sangat konsisten. Ini sangat membantu untuk riset skripsi saya."</p>
           <div class="testimonial-author">
             <div class="testimonial-avatar teal">NS</div>
             <div>
@@ -332,7 +361,8 @@
         </div>
         <div class="testimonial-card reveal">
           <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Platform yang luar biasa dan yang terpenting gratis! Kami menggunakan ini untuk memperbanyak dataset survei kesehatan masyarakat sehingga model prediktif kami lebih robust."</p>
+          <p class="testimonial-text">"Platform yang luar biasa dan yang terpenting gratis! Kami menggunakan ini untuk
+            memperbanyak dataset survei kesehatan masyarakat sehingga model prediktif kami lebih robust."</p>
           <div class="testimonial-author">
             <div class="testimonial-avatar cyan">PA</div>
             <div>
@@ -343,7 +373,8 @@
         </div>
         <div class="testimonial-card reveal">
           <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Sebagai peneliti dengan keterbatasan akses data pasien, SynthMed menjadi solusi augmentasi data yang etis. Hasil sintesis mempertahankan korelasi antar variabel dengan sangat baik."</p>
+          <p class="testimonial-text">"Sebagai peneliti dengan keterbatasan akses data pasien, SynthMed menjadi solusi
+            augmentasi data yang etis. Hasil sintesis mempertahankan korelasi antar variabel dengan sangat baik."</p>
           <div class="testimonial-author">
             <div class="testimonial-avatar green">DH</div>
             <div>
@@ -425,7 +456,8 @@
     <div class="container">
       <div class="cta-card reveal">
         <h2 class="cta-title">Siap Memperbanyak <span class="gradient-text">Dataset Riset</span> Anda?</h2>
-        <p class="cta-desc">Bergabung dengan 850+ peneliti yang sudah menggunakan SynthMed untuk augmentasi data. Daftar gratis, langsung gunakan.</p>
+        <p class="cta-desc">Bergabung dengan 850+ peneliti yang sudah menggunakan SynthMed untuk augmentasi data. Daftar
+          gratis, langsung gunakan.</p>
         <div class="cta-input-group">
           <input type="email" class="cta-input" placeholder="Masukkan email institusi Anda..." id="ctaEmail">
           <button class="btn-primary" id="btnCta">🔬 Daftar sebagai Peneliti</button>
@@ -443,7 +475,8 @@
             <span class="nav-logo-icon">🧬</span>
             SynthMed
           </a>
-          <p>Platform riset terbuka dan gratis untuk augmentasi dataset kesehatan. Dibuat oleh peneliti, untuk peneliti.</p>
+          <p>Platform riset terbuka dan gratis untuk augmentasi dataset kesehatan. Dibuat oleh peneliti, untuk peneliti.
+          </p>
           <div class="footer-social">
             <a href="#" aria-label="LinkedIn">in</a>
             <a href="#" aria-label="Twitter">𝕏</a>
@@ -493,4 +526,5 @@
   <!-- ===== JAVASCRIPT ===== -->
   <script src="app.js"></script>
 </body>
+
 </html>
