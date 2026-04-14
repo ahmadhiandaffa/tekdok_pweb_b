@@ -8,6 +8,6 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 use App\Http\Controllers\AssessmentController;
-
+//
 Route::post('/asesmen', [AssessmentController::class, 'store']);
 Route::get('/hasil/{id}', [AssessmentController::class, 'show']);
